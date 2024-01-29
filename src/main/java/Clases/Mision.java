@@ -15,6 +15,12 @@ public class Mision {
     private String Rango; 
     private double Recompensa; 
 
+    public Mision() {
+    }
+    
+    
+    
+
     public Mision(int Id_Mision, String Descripcion, String Rango, double Recompensa) {
         this.Id_Mision = Id_Mision;
         this.Descripcion = Descripcion;
@@ -52,6 +58,10 @@ public class Mision {
 
     public void setRecompensa(double Recompensa) {
         this.Recompensa = Recompensa;
+    }
+
+    public void add(Mision misione) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

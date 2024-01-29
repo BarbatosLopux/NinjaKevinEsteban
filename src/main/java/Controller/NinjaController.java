@@ -6,6 +6,7 @@ package Controller;
 
 import Clases.Ninja;
 import DAO.NinjaDAO;
+import java.util.List;
 
 
 /**
@@ -17,11 +18,18 @@ public class NinjaController {
     
     private static NinjaDAO ninjaDao = new NinjaDAO();
 
+   public static List<Ninja> getAllNinjas(){
+    return ninjaDao.getAllNinjas(); } 
    
+   public static Ninja getNinjaById(long ninjaId){
+       return ninjaDao.getNinjaById(ninjaId);
+   }
     
     public static void insertNinja (Ninja ninja) {
         ninjaDao.save(ninja);
     }
 
+    
+    
     
 }

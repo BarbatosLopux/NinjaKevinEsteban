@@ -59,6 +59,11 @@ public class Ninja {
     public void setAldea(String Aldea) {
         this.Aldea = Aldea;
     }
+
+    @Override
+    public String toString() {
+        return "Ninja{" + "Id_Ninja=" + Id_Ninja + ", Nombre=" + Nombre + ", Rango=" + Rango + ", Aldea=" + Aldea + '}';
+    }
     
     
     
