@@ -1,0 +1,26 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
+ */
+package DAO;
+
+/**
+ *
+ * @author user
+ */
+/**
+ * An interface that extends IDao, providing a method to retrieve an entity by its ID with full details.
+ * This interface is generic, allowing for any type of entity to be retrieved.
+ *
+ * @param <T> The type of the entity to be retrieved.
+ */
+public interface IGetByIdFullDao <T> extends IDao {
+
+    /**
+     * Retrieves an entity of type T by its ID, potentially including all its detailed information.
+     * 
+     * @param id The unique identifier of the entity to be retrieved.
+     * @return An instance of type T corresponding to the provided ID, or null if not found.
+     */
+    T getByIdFull(long id);
+}
