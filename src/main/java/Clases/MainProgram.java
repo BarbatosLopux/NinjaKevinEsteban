@@ -57,9 +57,7 @@ public class MainProgram {
                     Ninja ninja = ninjaBuilder.Id_Ninja(id).Nombre(nombre).Rango(rango).Aldea(aldea).build();
                     ninjaController.insertNinja(ninja);
                     break;
-                default:
-                    System.out.println("Opción inválida seleccionada.");
-                    break;
+               
                case 2:
                 List<Ninja> ninjas = NinjaController.getAllNinjas();
                 for (Ninja ninje : ninjas) {
@@ -88,7 +86,9 @@ public class MainProgram {
                             System.out.println("No se encontró un ninja con el ID especificado.");
                         }
 
-
+                default:
+                    System.out.println("Opción inválida seleccionada.");
+                    break;
 
             }
         

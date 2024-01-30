@@ -20,6 +20,11 @@ public class MisionNinja extends Mision {
     private Date FechaFinal; 
     private boolean Estado; 
 
+    public MisionNinja() {
+    }
+    
+    
+
     public MisionNinja(int Id_Mision, String Descripcion, String Rango, double Recompensa) {
         super(Id_Mision, Descripcion, Rango, Recompensa);
     }
@@ -53,6 +58,11 @@ public class MisionNinja extends Mision {
 
     public void setEstado(boolean Estado) {
         this.Estado = Estado;
+    }
+
+    @Override
+    public String toString() {
+        return "MisionNinja{" + "FechaInicio=" + FechaInicio + ", FechaFinal=" + FechaFinal + ", Estado=" + Estado + '}';
     }
     
     
